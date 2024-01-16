@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top" id="navbar">
+        <div class="container">
+          <div class="navbar-brand .mont-font text-uppercase"
+            ><h1 class="site-title">Weather</h1></div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-row-reverse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active line" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link line" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link line" href="#">Live Camera</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link line" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header id="home">
+        <div class="container">
+            <form class="location">
+                <input type="text" placeholder="Find your location..." id="inputWord">
+            </form>
+            <div id="weatherDiv" class="grid gap-3">
+                <div class="card mb-3 col-4">
+                    <div class="card-header firstHeader todayStyle">
+                        <h5>day</h5>
+                        <h5>13 january</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="secondHeader">
+                            <h5 class="card-text">Cairo</h5>
+                        </div>
+                        <div class="degreeBody">
+                            <h5 class="card-text">17<sup>o</sup>C</h5>
+                            <div class="icon">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="" width="90">
+                            </div>
+                        </div>
+                        <h5>clear</h5>
+                        <div class="footer">
+                            <h5>20%</h5>
+                            <h5>18 km/h</h5>
+                            <h5>east</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-4">
+                    <div class="card-header firstHeader">
+                        <h5>day</h5>
+                        <h5>13 january</h5>
+                    </div>
+                    <div class="card-body forecastStyle">
+                        <div class="degreeBody forecasting">
+                            <h5 class="card-text">17<sup>o</sup>C</h5>
+                            <div class="icon">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="" width="90">
+                            </div>
+                        </div>
+                        <div class="text-center text-capitalize">
+                            <h5>clear</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </header>
+    
+   
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

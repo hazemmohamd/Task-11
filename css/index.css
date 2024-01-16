@@ -1,0 +1,117 @@
+.navbar{
+    background-color: rgb(233, 233, 233) !important;
+}
+
+.navbar-nav li {
+    margin: 17px 25px ;
+}
+
+.navbar-nav li a {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-item .line{
+    position: relative;
+    border: 2px transparent solid;
+    padding: 5px 30px !important;
+    border-radius: 30px;
+
+}
+
+
+
+
+.navbar .nav-item:hover>.line, .navbar .active{
+    border: 2px black solid;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#home {
+    min-height: 100vh;
+}
+
+#home .container {
+    padding-top: 20rem;
+}
+
+
+
+.firstHeader{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.todayStyle{
+    background-color: white !important;
+}
+
+
+.degreeBody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.degreeBody h5 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.footer {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.footer h5{
+    font-size: 1rem;
+}
+#weatherDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.location{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+
+#inputWord{
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    outline: none;
+    border:5px solid transparent;
+    border-radius: 30px;
+    background-color: rgb(233, 233, 233) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+#inputWord:focus{
+    background-color: white !important;
+    border: 5px solid rgb(233, 233, 233) ;
+}
+
+.forecasting{
+    display: flex;
+    flex-direction: column !important;
+    margin-bottom: 0.5rem;
+}
+
+.forecasting h5 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.forecastStyle{
+    background-color: #F8F8F8;
+}
+
+
