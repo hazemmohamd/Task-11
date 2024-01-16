@@ -65,7 +65,7 @@ function displayCurrent(id,degree,forecast){
     let currentDate = new Date(degree.last_updated.replace(" ","T"))
     console.log(currentDate.getDate());
     let data =`
-    <div class="card mb-3 col-4">
+    <div class="card mb-3 col-lg-4">
         <div class="card-header firstHeader todayStyle">
             <h5>${days[currentDate.getDay()]}</h5>
             <h5>${currentDate.getDate()} ${month[currentDate.getMonth()]}</h5>
@@ -98,7 +98,7 @@ function displayForecast(forecast){
         let currentDate = new Date(forecast.forecastday[i].date.replace(" ","T"))
         console.log(currentDate);
         tempForecastData +=`
-        <div class="card mb-3 col-4">
+        <div class="card mb-3 col-lg-4">
     <div class="card-header firstHeader">
     <h5>${days[currentDate.getDay()]}</h5>
     <h5>${currentDate.getDate()} ${month[currentDate.getMonth()]}</h5>
