@@ -4,7 +4,6 @@ let weatherDiv = document.getElementById("weatherDiv")
 let inputWord = document.getElementById("inputWord")
 
 const succcess =function(position){
-  console.log(position);
   const latitude=position.coords.latitude
   const longitude=position.coords.longitude
   getGeoData(latitude,longitude)
@@ -21,7 +20,6 @@ async function getGeoData(latitude,longitude){
   let response = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`);
   if (response.ok && 400 != response.status) {
       let finalResponse = await response.json();
-      console.log(finalResponse);
       let data=finalResponse.locality;
       getData(data);
   }
@@ -63,7 +61,6 @@ const month = ["January", "February", "March", "April", "May", "June", "July", "
 
 function displayCurrent(id,degree,forecast){
     let currentDate = new Date(degree.last_updated.replace(" ","T"))
-    console.log(currentDate.getDate());
     let data =`
     <div class="card mb-3 col-lg-4">
         <div class="card-header firstHeader todayStyle">
@@ -96,7 +93,6 @@ function displayForecast(forecast){
   let tempForecastData =''
     for(let i = 1; i<forecast.forecastday.length; i++){
         let currentDate = new Date(forecast.forecastday[i].date.replace(" ","T"))
-        console.log(currentDate);
         tempForecastData +=`
         <div class="card mb-3 col-lg-4">
     <div class="card-header firstHeader">
